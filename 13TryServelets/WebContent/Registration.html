@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <TITLE> Customer Registration  </TITLE>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "scripts.js"></script>
+    
+    <style>
+        .error{
+            display: none;
+            margin-left: 10px;
+        }		
+
+        .error_show{
+            color: red;
+            margin-left: 10px;
+        } 
+    </style>    
+</head>
+<body>
+    <h1>Infinity DTH Services</h1>
+    <h2>Customer Registration Page</h2>
+    <div id = "registrationForm">
+        <form id ="regInfo">
+
+            <span>First name:</span>
+            <input id = "firstName" type="text" placeholder="First Name" ><br>
+            <div id= "firstNameError"></div><br>
+            
+            <span>Last name:</span>
+            <input id = "lastName" type="text" placeholder="Last Name"><br>
+            <div id= "lastNameError"></div><br>
+            
+            <span>Email Address:</span>
+            <input id = "emailAddress" type="text" placeholder="Email Address">
+            <div id = "emailAddressError"></div><br>
+            
+            <span>Phone Number:</span>
+            <input id = "phoneNumber" type="text" placeholder="(xxx)xxx-xxxx">
+            <div id= "phoneNumberError"></div><br>
+            
+            <span>Address:</span>
+            <input id="address" type="text">
+            <div id="addressError"></div><br>
+            
+            <span>Address 1:</span>
+            <input id="address1" type="text"><br>
+            <div id = "address1Error"></div><br>
+            
+            <span>Address 2:</span>
+            <input id="address2" type="text"><br>
+            <div id = "address2Error"></div><br>
+            
+            <span>Zipcode:</span>
+            <input id="zipcode" type="text"><br>
+            <div id = "zipcodeError"></div><br>
+            
+            <span>City:</span>
+            <input id="city" type="text"><br>
+            <div id = "cityError"></div><br>
+            
+            <span>State:</span>
+            <input id="state" type="text"><br>
+            <div id = "stateError"></div><br>
+
+            <span>Customer Creation Date: </span>
+            <input id="customerCreationDate" type="text" placeholder="mm/dd/yy" disabled><br>
+            <div id="customerCreationDate"></div>
+            <div id="customerCreationDateError"></div><br>
+
+            <span>Operator Name:</span>
+            <input id = "operatorName" type="text" disabled><br>
+            <div id="operatorNameError"></div><br>
+
+            <span>Retailer Name:</span>
+            <input id = "retailerName" type="text" disabled><br>
+            <div id="retailerNameError"></div><br>
+
+            <input id="submitButton" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div>
+        <a id = "goBack" href="Index.html">Go Back To Login Page</a>
+    </div>
+</body>	
+</html>

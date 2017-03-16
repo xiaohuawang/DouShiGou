@@ -1,0 +1,75 @@
+<HTML>
+	<HEAD>
+		<TITLE> Select Package Details </TITLE>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<script type = "text/javascript" src = "scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        
+	</HEAD>
+	<BODY>
+		<h1> Infinity DTH Services </h1>
+		<h2> Select Set Box Type </h2>
+				<div id = "buttons">
+					<form action="">
+						  <input id = "standar" name="type" type="radio"  value="HD"> <span>Standard</span>
+						  <input id = "HD" name="type" type="radio"  value="HD"> <span>High Definition</span>
+						  <input id = "HD+" name="type" type="radio"  value="HD+"> <span>HD Recorder</span>
+						  <input id = "IPTV" name="type" type="radio"  value="IPTV"> <span>IPTV</span>
+					</form>
+			
+				</div>
+				
+		<h2> Select Set Box Features </h2>		
+			<div id="fieldsSection">
+				<div class="container">
+				<div class="row">
+				<input type="hidden" name="count" value="1" />
+				<div class="control-group" id="fields">
+				<label class="control-label" for="field1">Set Top Box Features</label>
+				<div class="controls" id="profs"> 
+                <form class="input-append">
+                <div id="field"><small>Press + to add another form field</small><br><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Additional New Feature" data-items="8"/><button id="b1" class="btn add-more" type="button">+</button>
+				
+				</div>
+                </form>
+
+				</div>
+				</div>
+				</div>
+				</div> 				
+				<span>Dimensions: </span><input id = "dimensions" type="text"><br>
+				<span>Length: </span><input id = "length" type="text"><br>
+				<span>Breadth: </span><input id = "breadth" type="text"><br>
+				<span>Width: </span><input id = "width" type="text"><br>
+				<span>Price: </span><input id = "price" type="text"><br>
+				<span>Installation Charges: </span><input id = "installationCharges" type="text"><br>
+				<span >Upgradation charge: </span><span class = "parenthesis"> </span><input id = "upgradation" type="text" placeholder ="Not required for stand. type"><br>
+				<span>Discount(%): </span><input id = "discount" type="text"> <span> </span><br>
+				<span> Select Payment Type: </span>
+						<br>
+							<input id= "postPaid" type="radio" name="ptype" value="Post Paid"> <span>Post Paid</span>
+							<input id= "prePaid" type="radio" name="ptype" value="Pre-Paid"> <span>Pre-Paid</span>
+  						<br>
+				<span>Refundable Deposit Amount: </span><input id = "refundableDepositAmount" type="text" disabled><br>
+				
+				<span>Set Top Box inventory details: </span> <input id = "STBInventoryDetails" type="file" accept = ".csv,text/csv"><br>
+				
+				<span>Set Top Box Type: </span> <span class = "parenthesis">(should match with one selected above)</span><br>
+				<span>Set Top Box Serial number: </span><input id = "STBSerialNumber" type="text" ><br>
+				<span>Set Top Box MAC ID: </span><input id = "STBMACId" type="text" ><br>
+				<span>Remote Control asset id: </span><input id = "remoteControlAssetId" type="text" ><br>
+				<span>Dish asset id: </span><input id = "dishAssetId" type="text" ><br>
+				<span>Set TopBox Status: </span><input id = "STBStatus" type="text" ><br>
+				
+				
+		<span> Select Payment Type </span>
+						<form action="">
+							<input id= "postPaid" type="radio" name="ptype" value="Post Paid"> <span>Post Paid</span>
+							<input id= "prePaid" type="radio" name="ptype" value="Pre-Paid"> <span>Pre-Paid</span>
+  
+						</form>
+			</div>
+	</BODY>
+	
+</HTML>

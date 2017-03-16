@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
+        
+        <style>
+        .error{
+            display: none;
+            margin-left: 10px;
+        }		
+
+        .error_show{
+            color: red;
+            margin-left: 10px;
+        } 
+        </style>
+	</head>
+	<body>
+		<h1>Infinity DTH Services</h1>
+            <div id="loginForm">
+            <form id="login" name="login">
+                <label for="userName">User Name:</label>
+                <input id="userName" type="text" placeholder="UserName"><br>
+                <div id="userNameError"></div>
+                
+                <label>Password:</label>
+                <input id="password" type="password" placeholder="Password"><br>
+                <div id="passwordError"></div>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+            </div>
+            <div id="createNewAccount">
+                <a id="newAccountLink" href="Registration.html">Create New Account</a>
+            </div>
+	</body>
+</html>
+				
+				
+			
